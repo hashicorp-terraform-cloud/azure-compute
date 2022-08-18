@@ -5,7 +5,7 @@ provider "azurerm" {
 module "rhel" {
   source  = "app.terraform.io/acme-cloud-demo/rhel/azurerm"
   version = "0.0.6"
-  count   = 2 
+  count   = var.vm_count
   
   vm_name                   = format("%s%d", var.vm_base_name, count.index)
   rg_name                   = var.rg_name
