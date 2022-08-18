@@ -12,9 +12,9 @@ module "rhel" {
   ssh_admin_user_public_key = var.ssh_admin_user_public_key
   ssh_admin_user            = var.ssh_admin_user
   
-  # resource_tags = {
-  #   app = "acme-app"
-  #   os  = "linux"
-  #   eol = "01-02-2023" 
-  # }
+  resource_tags = {
+    app = var.vm_base_name
+    os  = "linux"
+    eol = "01-02-2023" 
+  }
 }
