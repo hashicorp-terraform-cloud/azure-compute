@@ -7,9 +7,11 @@ module "rhel" {
   version = "0.0.6"
   count   = 2 
   
-  vm_name = format("%s%d", var.vm_base_name, count.index)
-  rg_name = var.rg_name
+  vm_name                   = format("%s%d", var.vm_base_name, count.index)
+  rg_name                   = var.rg_name
   ssh_admin_user_public_key = var.ssh_admin_user_public_key
+  ssh_admin_user            = var.ssh_admin_user
+  
   # resource_tags = {
   #   app = "acme-app"
   #   os  = "linux"

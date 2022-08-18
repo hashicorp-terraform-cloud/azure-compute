@@ -9,6 +9,11 @@ variable "ssh_admin_user_public_key" {
   type        = string
 }
 
+variable "ssh_admin_user" {
+  description = "Admin User SSH Username"
+  type        = string
+}
+
 variable vm_base_name {
   description = "Azure Virtual Machine Name Prefix"
   type = string
