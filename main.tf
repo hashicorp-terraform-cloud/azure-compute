@@ -13,7 +13,7 @@ module "rhel" {
   ssh_admin_user            = var.ssh_admin_user
   
   # resource_tags = {
-  #   app = "acme-app"
+  #   app = var.vm_base_name
   #   os  = "linux"
   #   eol = "01-02-2023" 
   # }
