@@ -21,6 +21,5 @@ variable vm_base_name {
 
 variable "rg_name" {
   description = "Resource Group Name"
-  default     = "terraformDefaultRG"
   type        = string
 }
