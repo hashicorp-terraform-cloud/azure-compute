@@ -7,7 +7,7 @@ provider "random" {
 
 module "rhel" {
   source  = "app.terraform.io/ben-holmes/rhel-standard/azurerm"
-  version = "0.0.1"
+  version = "0.0.2"
   count   = var.vm_instance_count
 
   vm_name_prefix            = var.vm_name_prefix
