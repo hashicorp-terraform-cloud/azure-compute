@@ -1,4 +1,4 @@
-variable "vm_count" {
+variable "vm_instance_count" {
   description = "Number of Azure Virtual Machines to create"
   type        = number
   default     = 1
