@@ -2,9 +2,13 @@ provider "azurerm" {
   features {}
 }
 
+provider "random" {
+}
+
+
 module "rhel" {
-  source  = "app.terraform.io/ben-holmes/rhel/azurerm"
-  version = "0.0.11"
+  source  = "app.terraform.io/ben-holmes/rhel-standard/azurerm"
+  version = "0.0.1"
   count   = var.vm_count
 
   vm_name_prefix            = var.vm_name_prefix
