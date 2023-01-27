@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 
 module "rhel" {
-  source  = "app.terraform.io/acme-cloud-demo/rhel/azurerm"
+  source  = "app.terraform.io/ben-holmes/rhel/azurerm"
   version = "0.0.11"
   count   = var.vm_count
 
