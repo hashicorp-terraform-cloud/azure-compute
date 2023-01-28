@@ -14,7 +14,7 @@ variable "ssh_admin_user" {
   type        = string
 }
 
-variable "vm_name_prefix" {
+variable "vm_name" {
   description = "Each VM is created with a randomly generated name. Assign a common prefix."
   type        = string
 }
@@ -26,5 +26,17 @@ variable "vm_owner" {
 
 variable "rg_name" {
   description = "Target Resource Group Name"
+  type        = string
+}
+
+variable "vm_sku" {
+  description = "Azure RHEL Virtual Machine SKU"
+  default     = "rhel-lvm91-gen2"
+  type        = string
+}
+
+variable "vm_size" {
+  description = "Azure Virtual Machine Size"
+  default     = "Standard_D2as_v4"
   type        = string
 }
