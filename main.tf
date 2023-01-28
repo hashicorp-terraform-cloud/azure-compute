@@ -23,7 +23,7 @@ locals {
   vm_name = "${var.vm_name_prefix}-${random_pet.compute_id.id}"
 }
 
-module "rhel" {
+module "rhel-standard" {
   source  = "app.terraform.io/ben-holmes/rhel-standard/azurerm"
   version = "0.0.5"
   count   = var.vm_instance_count
