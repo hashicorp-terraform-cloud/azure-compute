@@ -16,6 +16,7 @@ resource "random_pet" "compute_id" {
 locals {
   default_resource_tags = {
     OwnedBy = random_pet.compute_id.keepers.owner
+    ProvisionedBY = "Terraform Cloud"
   }
 }
 
