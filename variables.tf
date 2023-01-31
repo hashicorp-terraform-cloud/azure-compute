@@ -29,7 +29,7 @@ variable "rg_name" {
   type        = string
   
   validation {
-    condition     = length(var.image_id) > 1"
+    condition     = length(var.rg_name) > 1
     error_message = "rg_name must be a string value greater than 1 character in length"
   }
 }
