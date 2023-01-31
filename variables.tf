@@ -27,6 +27,11 @@ variable "vm_owner" {
 variable "rg_name" {
   description = "Target Resource Group Name"
   type        = string
+  
+  validation {
+    condition     = length(var.image_id) > 1"
+    error_message = "rg_name must be a string value greater than 1 character in length"
+  }
 }
 
 variable "vm_sku" {
