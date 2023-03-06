@@ -20,7 +20,7 @@ locals {
 
 module "rhel-standard" {
   source  = "app.terraform.io/ben-holmes/rhel-standard/azurerm"
-  version = "0.0.5"
+  version = "0.0.7"
   count   = var.vm_instance_count
 
   vm_name                   = "${local.vm_name}-${count.index}"
