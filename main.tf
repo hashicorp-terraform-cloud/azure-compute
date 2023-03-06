@@ -24,7 +24,6 @@ module "rhel-standard" {
   count   = var.vm_instance_count
 
   vm_name                   = "${local.vm_name}-${count.index}"
-  vm_owner                  = random_pet.compute_id.keepers.owner
   vm_sku                    = var.vm_sku
   vm_size                   = var.vm_size
   rg_name                   = var.rg_name
