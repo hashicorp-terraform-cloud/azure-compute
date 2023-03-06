@@ -27,7 +27,7 @@ variable "vm_owner" {
 variable "rg_name" {
   description = "Target Resource Group Name"
   type        = string
-  
+
   validation {
     condition     = length(var.rg_name) > 1
     error_message = "rg_name must be a string value greater than 1 character in length"
@@ -44,4 +44,10 @@ variable "vm_size" {
   description = "Azure Virtual Machine Size"
   default     = "Standard_D2as_v4"
   type        = string
+}
+
+variable "extra_tags" {
+  description = "Extra tags to be applied to the created resources"
+  default     = {}
+  type        = map(any)
 }

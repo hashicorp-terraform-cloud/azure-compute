@@ -14,13 +14,8 @@ resource "random_pet" "compute_id" {
 }
 
 locals {
-  default_resource_tags = {
-    OwnedBy = random_pet.compute_id.keepers.owner
-  }
-}
-
-locals {
-  vm_name = "${var.vm_name_prefix}-${random_pet.compute_id.id}"
+  resource_tags = merge(var.extra_tags, { owner = random_pet.compute_id.keepers.owner, DoNotDelete = true })
+  vm_name       = "${var.vm_name_prefix}-${random_pet.compute_id.id}"
 }
 
 module "rhel-standard" {
@@ -35,5 +30,5 @@ module "rhel-standard" {
   rg_name                   = var.rg_name
   ssh_admin_user_public_key = var.ssh_admin_user_public_key
   ssh_admin_user            = var.ssh_admin_user
-  resource_tags             = local.default_resource_tags
+  resource_tags             = local.resource_tags
 }
