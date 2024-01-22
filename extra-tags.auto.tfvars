@@ -1,1 +1,1 @@
-extra_tags = {}
+extra_tags = { hello = "goodbye" }
