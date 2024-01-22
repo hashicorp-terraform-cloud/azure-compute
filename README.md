@@ -1,3 +1,7 @@
+# azure-compute
+
+Example of Terraform configurations called a module in Terraform Cloud's Private Module Registry.
+
 ## Requirements
 
 | Name | Version |
