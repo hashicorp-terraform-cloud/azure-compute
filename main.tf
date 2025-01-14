@@ -3,17 +3,9 @@ provider "azurerm" {
   features {}
 }
 
-resource "random_pet" "compute_id" {
-  length = 2
-  keepers = {
-    owner = var.vm_owner
-  }
-
-}
-
 module "rhel-standard" {
   source  = "app.terraform.io/ben-holmes/rhel-standard/azurerm"
-  version = "0.1.5"
+  version = "0.1.6"
   count   = var.vm_instance_count
 
   vm_name_prefix            = var.vm_name_prefix

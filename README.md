@@ -12,21 +12,17 @@ Example of Terraform configurations called a module in Terraform Cloud's Private
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_random"></a> [random](#provider\_random) | 3.6.3 |
+No providers.
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_rhel-standard"></a> [rhel-standard](#module\_rhel-standard) | app.terraform.io/ben-holmes/rhel-standard/azurerm | 0.1.5 |
+| <a name="module_rhel-standard"></a> [rhel-standard](#module\_rhel-standard) | app.terraform.io/ben-holmes/rhel-standard/azurerm | 0.1.6 |
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [random_pet.compute_id](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/pet) | resource |
+No resources.
 
 ## Inputs
 
@@ -46,8 +42,9 @@ Example of Terraform configurations called a module in Terraform Cloud's Private
 
 | Name | Description |
 |------|-------------|
-| <a name="output_default_username"></a> [default\_username](#output\_default\_username) | The Default Admin Username of the Azure Virtual Machine Instance |
-| <a name="output_private_ip"></a> [private\_ip](#output\_private\_ip) | The Private IP Adress of the Azure Virtual Machine Instance |
-| <a name="output_public_ip"></a> [public\_ip](#output\_public\_ip) | The Public IP Adress of the Azure Virtual Machine Instance |
-| <a name="output_rhel_vm_id"></a> [rhel\_vm\_id](#output\_rhel\_vm\_id) | The ID of the Azure Virtual Machine Instance |
+| <a name="output_default_hostname"></a> [default\_hostname](#output\_default\_hostname) | The default hostname of the Azure Virtual Machine Instance |
+| <a name="output_default_username"></a> [default\_username](#output\_default\_username) | The default username of the Azure Virtual Machine Instance |
+| <a name="output_private_ip"></a> [private\_ip](#output\_private\_ip) | The private IP adress of the Azure Virtual Machine Instance |
+| <a name="output_public_ip"></a> [public\_ip](#output\_public\_ip) | The public IP adress of the Azure Virtual Machine Instance |
+| <a name="output_rhel_vm_id"></a> [rhel\_vm\_id](#output\_rhel\_vm\_id) | The Azure ID of the Azure Virtual Machine Instance |
 <!-- END_TF_DOCS -->
