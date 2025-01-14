@@ -51,3 +51,13 @@ variable "extra_tags" {
   default     = {}
   type        = map(any)
 }
+
+variable "rhsm_activation_key" {
+  description = "RHSM Activation Key"
+  type        = string
+}
+
+variable "rhsm_organisation_id" {
+  description = "RHSM Organisation ID"
+  type        = string
+}
