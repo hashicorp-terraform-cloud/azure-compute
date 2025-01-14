@@ -29,15 +29,9 @@ variable "rg_name" {
   }
 }
 
-variable "vm_sku" {
-  description = "Azure RHEL Virtual Machine SKU"
-  default     = "rhel-lvm91-gen2"
-  type        = string
-}
-
 variable "vm_size" {
   description = "Azure Virtual Machine Size"
-  default     = "Standard_D2as_v4"
+  default     = "Standard_D2as_v5"
   type        = string
 }
 
