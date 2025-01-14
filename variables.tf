@@ -9,11 +9,6 @@ variable "ssh_admin_user_public_key" {
   type        = string
 }
 
-variable "ssh_admin_user" {
-  description = "Admin User SSH Username"
-  type        = string
-}
-
 variable "vm_name_prefix" {
   description = "Each VM is created with a randomly generated name. Assign a common prefix."
   type        = string
