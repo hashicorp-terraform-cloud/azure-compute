@@ -1,1 +1,4 @@
-extra_tags = {}
+extra_tags = {
+    useful = "information"
+    handy  = "data"    
+}
